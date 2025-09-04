@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { CodeXml, PenTool, Video, Bot, Palette, FileText } from "lucide-react";
+import { CodeXml, Palette, FileText, Video, Bot, LineChart } from "lucide-react";
 
 const services = [
   {
@@ -28,6 +28,13 @@ const services = [
     description:
       "Compelling and SEO-friendly content that engages your readers and communicates your message effectively.",
     price: "$100+",
+  },
+   {
+    icon: <LineChart className="w-8 h-8 text-primary" />,
+    title: "Digital Marketing",
+    description:
+      "Boost your online presence with our data-driven digital marketing strategies, including SEO, and social media management.",
+    price: "$250+",
   },
   {
     icon: <Video className="w-8 h-8 text-primary" />,
@@ -57,7 +64,7 @@ export default function ServicesSection() {
             We offer a range of services to help your business succeed online.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card
               key={service.title}
