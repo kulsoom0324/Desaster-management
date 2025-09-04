@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
-const expertise = ["Next.js", "AI & Automation", "WordPress", "SEO", "UI/UX Design"];
+const expertise = ["Next.js", "AI & Automation", "Graphic Design", "Content Writing", "Video Editing", "UI/UX Design"];
 
 export default function AboutSection() {
   return (
