@@ -13,7 +13,7 @@ const services = [
     title: "Web Design & Development",
     description:
       "Creating stunning, high-performance websites with Next.js and modern frontend technologies. We focus on responsive design and exceptional user experience.",
-    price: "$1,000+",
+    price: "$500+",
   },
   {
     icon: <PenTool className="w-8 h-8 text-primary" />,
@@ -34,7 +34,7 @@ const services = [
     title: "AI Automation",
     description:
       "Integrate intelligent automation into your business. From AI-powered chatbots to automated workflows, we help you work smarter, not harder.",
-    price: "$1,200+",
+    price: "$900+",
   },
 ];
 
