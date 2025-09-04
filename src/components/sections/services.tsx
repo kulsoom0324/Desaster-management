@@ -4,7 +4,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { CodeXml, Megaphone, Bot } from "lucide-react";
+import { CodeXml, PenTool, Video, Bot } from "lucide-react";
 
 const services = [
   {
@@ -14,10 +14,16 @@ const services = [
       "Creating stunning, high-performance websites with Next.js and modern frontend technologies. We focus on responsive design and exceptional user experience.",
   },
   {
-    icon: <Megaphone className="w-8 h-8 text-primary" />,
-    title: "SEO & Marketing",
+    icon: <PenTool className="w-8 h-8 text-primary" />,
+    title: "Graphic Designing & Writing",
     description:
-      "Boost your online visibility and drive organic traffic. Our SEO strategies are designed to rank your website higher and attract your target audience.",
+      "Visually stunning graphics and compelling content. Our creative team produces designs and copy that captivate your audience and elevate your brand.",
+  },
+  {
+    icon: <Video className="w-8 h-8 text-primary" />,
+    title: "Video Editing",
+    description:
+      "Professional video editing services to make your content shine. From corporate videos to social media clips, we bring your vision to life.",
   },
   {
     icon: <Bot className="w-8 h-8 text-primary" />,
@@ -39,7 +45,7 @@ export default function ServicesSection() {
             We offer a range of services to help your business succeed online.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Card
               key={service.title}
