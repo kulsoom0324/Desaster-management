@@ -13,28 +13,28 @@ const services = [
     title: "Web Design & Development",
     description:
       "Creating stunning, high-performance websites with Next.js and modern frontend technologies. We focus on responsive design and exceptional user experience.",
-    price: "$1,500+",
+    price: "$1,000+",
   },
   {
     icon: <PenTool className="w-8 h-8 text-primary" />,
     title: "Graphic Designing & Writing",
     description:
       "Visually stunning graphics and compelling content. Our creative team produces designs and copy that captivate your audience and elevate your brand.",
-    price: "$500+",
+    price: "$250+",
   },
   {
     icon: <Video className="w-8 h-8 text-primary" />,
     title: "Video Editing",
     description:
       "Professional video editing services to make your content shine. From corporate videos to social media clips, we bring your vision to life.",
-    price: "$300+",
+    price: "$150+",
   },
   {
     icon: <Bot className="w-8 h-8 text-primary" />,
     title: "AI Automation",
     description:
       "Integrate intelligent automation into your business. From AI-powered chatbots to automated workflows, we help you work smarter, not harder.",
-    price: "$2,000+",
+    price: "$1,200+",
   },
 ];
 
