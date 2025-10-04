@@ -9,10 +9,10 @@ export default function HeroSection() {
     >
       <div className="container mx-auto px-4 md:px-6 text-center space-y-6 relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter">
-          Building Resilience Against Climate Disasters
+          Disaster Management Complete System
         </h1>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground font-body">
-          ClimaGuard is an AI-powered platform for monitoring, predicting, and managing climate-related disasters to protect communities and save lives.
+          An AI-powered platform for monitoring, predicting, and managing disasters to protect communities and save lives.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button size="lg" asChild>

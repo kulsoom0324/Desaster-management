@@ -43,7 +43,7 @@ export default function Header() {
           prefetch={false}
         >
           <ShieldCheck className="h-6 w-6 text-primary" />
-          <span className="font-headline">ClimaGuard</span>
+          <span className="font-headline">Disaster Management</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
@@ -77,7 +77,7 @@ export default function Header() {
                   onClick={closeSheet}
                 >
                   <ShieldCheck className="h-6 w-6 text-primary" />
-                  <span className="font-headline">ClimaGuard</span>
+                  <span className="font-headline">Disaster Management</span>
                 </Link>
                 <nav className="grid gap-2 text-base font-medium">
                   {navLinks.map((link) => (

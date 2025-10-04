@@ -10,20 +10,20 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl order-last md:order-first">
             <Image
-              src="https://picsum.photos/seed/climatemap/800/600"
-              alt="Global Climate Monitoring Dashboard"
+              src="https://picsum.photos/seed/disaster-map/800/600"
+              alt="Global Disaster Monitoring Dashboard"
               fill
               className="object-cover"
-              data-ai-hint="climate map"
+              data-ai-hint="disaster map"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">
-              About ClimaGuard
+              About Our System
             </h2>
             <p className="text-muted-foreground font-body mb-6">
-              ClimaGuard is a state-of-the-art climate disaster management system designed to empower communities, governments, and organizations. Our mission is to leverage cutting-edge AI and data analytics to provide timely, accurate, and actionable insights for mitigating the impact of climate-related disasters and building a more resilient future.
+              Our state-of-the-art disaster management system is designed to empower communities, governments, and organizations. Our mission is to leverage cutting-edge AI and data analytics to provide timely, accurate, and actionable insights for mitigating the impact of disasters and building a more resilient future.
             </p>
             <div className="flex flex-wrap gap-2">
               {expertise.map((skill) => (

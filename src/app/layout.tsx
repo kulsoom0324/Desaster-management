@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "ClimaGuard - Climate Disaster Management System",
+  title: "Disaster Management Complete System",
   description:
     "An AI-powered platform for monitoring, predicting, and managing climate-related disasters.",
 };

@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <ShieldCheck className="h-6 w-6 text-primary" />
-          <span className="font-headline text-lg font-bold">ClimaGuard</span>
+          <span className="font-headline text-lg font-bold">Disaster Management</span>
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} ClimaGuard. All rights reserved.
+          &copy; {new Date().getFullYear()} Disaster Management. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <Link
