@@ -7,11 +7,12 @@ import { Button } from "@/components/ui/button";
 import { Menu, ShieldCheck } from "lucide-react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#features", label: "Features" },
-  { href: "#disasters", label: "Disasters" },
-  { href: "#tools", label: "AI Tools" },
-  { href: "#partners", label: "Partners" },
+  { href: "/#about", label: "About" },
+  { href: "/#features", label: "Features" },
+  { href: "/#disasters", label: "Disasters" },
+  { href: "/#tools", label: "AI Tools" },
+  { href: "/#partners", label: "Partners" },
+  { href: "/dashboard", label: "Dashboard" },
 ];
 
 export default function Header() {
@@ -38,7 +39,7 @@ export default function Header() {
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link
-          href="#"
+          href="/"
           className="flex items-center gap-2 font-bold text-lg"
           prefetch={false}
         >
@@ -71,7 +72,7 @@ export default function Header() {
             <SheetContent side="right">
               <div className="grid gap-4 py-6">
                 <Link
-                  href="#"
+                  href="/"
                   className="flex items-center gap-2 font-bold text-lg"
                   prefetch={false}
                   onClick={closeSheet}
