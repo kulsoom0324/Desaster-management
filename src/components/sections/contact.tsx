@@ -69,7 +69,7 @@ export default function ContactSection() {
       await new Promise(resolve => setTimeout(resolve, 1500));
       toast({
         title: "Message Sent!",
-        description: "Thank you for contacting us. We'll get back to you shortly.",
+        description: "Thank you for your inquiry. We'll be in touch shortly.",
       });
       form.reset();
       setAiResponse(null);
@@ -89,13 +89,13 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Get in Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Contact Us</h2>
             <p className="text-muted-foreground font-body mb-8">
-              Have a project in mind or just want to say hello? Fill out the form, and our team will get back to you. For immediate inquiries, feel free to connect with us on WhatsApp.
+              Have a question or want to request a demo of our platform? Fill out the form, and our team will get back to you. For urgent matters, please use our 24/7 support line.
             </p>
             <Card>
                 <CardHeader>
-                    <CardTitle>Contact Form</CardTitle>
+                    <CardTitle>Inquiry Form</CardTitle>
                     <CardDescription>We typically respond within 24 hours.</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -122,9 +122,9 @@ export default function ContactSection() {
             </Card>
           </div>
           <div className="space-y-6">
-            <Button variant="outline" asChild className="w-full text-lg p-6 bg-green-500 text-white hover:bg-green-600 hover:text-white">
-                <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="mr-2 h-5 w-5" /> Chat on WhatsApp
+            <Button variant="outline" asChild className="w-full text-lg p-6 bg-red-600 text-white hover:bg-red-700 hover:text-white">
+                <Link href="tel:1234567890" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="mr-2 h-5 w-5" /> 24/7 Emergency Support
                 </Link>
             </Button>
             
@@ -132,7 +132,7 @@ export default function ContactSection() {
                 <Card className="h-full flex flex-col">
                     <CardHeader>
                         <CardTitle>AI Assistant</CardTitle>
-                        <CardDescription>As you type your message, our AI provides instant info.</CardDescription>
+                        <CardDescription>As you type, our AI provides instant information.</CardDescription>
                     </CardHeader>
                     <CardContent className="flex-1">
                         {isAiLoading ? (
@@ -145,7 +145,7 @@ export default function ContactSection() {
                             <p className="text-sm text-muted-foreground whitespace-pre-wrap">{aiResponse}</p>
                         ) : (
                             <div className="text-center text-sm text-muted-foreground pt-10">
-                                <p>Start typing in the message box to get instant suggestions...</p>
+                                <p>Start typing your question to get instant information...</p>
                             </div>
                         )}
                     </CardContent>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
-const expertise = ["Next.js", "AI & Automation", "Graphic Design", "Content Writing", "Digital Marketing", "Video Editing"];
+const expertise = ["Real-time Monitoring", "Predictive Analytics", "AI & Machine Learning", "GIS Mapping", "Early Warning Systems", "Resource Management"];
 
 export default function AboutSection() {
   return (
@@ -10,23 +10,20 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl order-last md:order-first">
             <Image
-              src="https://picsum.photos/800/600"
-              alt="AetherWeb AI Team Collaboration"
+              src="https://picsum.photos/seed/climatemap/800/600"
+              alt="Global Climate Monitoring Dashboard"
               fill
               className="object-cover"
-              data-ai-hint="team collaboration"
+              data-ai-hint="climate map"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">
-              About AetherWeb AI
+              About ClimaGuard
             </h2>
             <p className="text-muted-foreground font-body mb-6">
-              We are a forward-thinking web agency passionate about crafting
-              exceptional digital experiences. Our core expertise lies in
-              leveraging cutting-edge technologies to build fast, scalable, and
-              intelligent web solutions for our clients. With a strong foundation in modern web development and AI, we provide a comprehensive suite of services to elevate your online presence.
+              ClimaGuard is a state-of-the-art climate disaster management system designed to empower communities, governments, and organizations. Our mission is to leverage cutting-edge AI and data analytics to provide timely, accurate, and actionable insights for mitigating the impact of climate-related disasters and building a more resilient future.
             </p>
             <div className="flex flex-wrap gap-2">
               {expertise.map((skill) => (

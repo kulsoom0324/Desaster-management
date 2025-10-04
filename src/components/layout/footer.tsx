@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { Github, Twitter, Linkedin, Mountain } from "lucide-react";
+import { Github, Twitter, Linkedin, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground py-8">
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <Mountain className="h-6 w-6 text-primary" />
-          <span className="font-headline text-lg font-bold">AetherWeb AI</span>
+          <ShieldCheck className="h-6 w-6 text-primary" />
+          <span className="font-headline text-lg font-bold">ClimaGuard</span>
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} AetherWeb AI. All rights reserved.
+          &copy; {new Date().getFullYear()} ClimaGuard. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <Link

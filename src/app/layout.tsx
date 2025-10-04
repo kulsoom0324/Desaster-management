@@ -4,9 +4,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "AetherWeb AI - Web Agency & AI Automation",
+  title: "ClimaGuard - Climate Disaster Management System",
   description:
-    "AetherWeb AI is a modern web agency specializing in Next.js, AI automation, and SEO to elevate your business.",
+    "An AI-powered platform for monitoring, predicting, and managing climate-related disasters.",
 };
 
 export default function RootLayout({

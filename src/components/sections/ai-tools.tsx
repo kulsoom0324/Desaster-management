@@ -10,35 +10,35 @@ import ProposalGenerator from "../ai/proposal-generator";
 import ContentGenerator from "../ai/content-generator";
 import ServiceRecommender from "../ai/service-recommender";
 
-export default function AIToolsSection() {
+export default function AiToolsSection() {
   return (
     <section id="tools" className="w-full py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
-            Explore Our AI Tools
+            Explore Our AI-Powered Tools
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground mt-2">
-            Experience the power of AI automation firsthand with our interactive demos.
+            Experience the power of AI in disaster management with our interactive demos.
           </p>
         </div>
         <Tabs defaultValue="chatbot" className="w-full max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto md:h-12">
             <TabsTrigger value="chatbot" className="py-2.5">
               <Bot className="mr-2 h-4 w-4" />
-              Chatbot
+              Alert Bot
             </TabsTrigger>
             <TabsTrigger value="proposal" className="py-2.5">
               <FileText className="mr-2 h-4 w-4" />
-              Proposal Gen
+              Report Gen
             </TabsTrigger>
             <TabsTrigger value="content" className="py-2.5">
               <PenSquare className="mr-2 h-4 w-4" />
-              Content Gen
+              Comms Writer
             </TabsTrigger>
             <TabsTrigger value="recommender" className="py-2.5">
               <Lightbulb className="mr-2 h-4 w-4" />
-              Recommender
+              Action Recommender
             </TabsTrigger>
           </TabsList>
           <TabsContent value="chatbot">

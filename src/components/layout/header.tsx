@@ -4,14 +4,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu, Mountain } from "lucide-react";
+import { Menu, ShieldCheck } from "lucide-react";
 
 const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "#features", label: "Features" },
+  { href: "#disasters", label: "Disasters" },
   { href: "#tools", label: "AI Tools" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#partners", label: "Partners" },
 ];
 
 export default function Header() {
@@ -42,8 +42,8 @@ export default function Header() {
           className="flex items-center gap-2 font-bold text-lg"
           prefetch={false}
         >
-          <Mountain className="h-6 w-6 text-primary" />
-          <span className="font-headline">AetherWeb AI</span>
+          <ShieldCheck className="h-6 w-6 text-primary" />
+          <span className="font-headline">ClimaGuard</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
@@ -59,7 +59,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <Button asChild className="hidden sm:inline-flex">
-            <Link href="#contact">Get Free Consultation</Link>
+            <Link href="#contact">Request a Demo</Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>
@@ -76,8 +76,8 @@ export default function Header() {
                   prefetch={false}
                   onClick={closeSheet}
                 >
-                  <Mountain className="h-6 w-6 text-primary" />
-                  <span className="font-headline">AetherWeb AI</span>
+                  <ShieldCheck className="h-6 w-6 text-primary" />
+                  <span className="font-headline">ClimaGuard</span>
                 </Link>
                 <nav className="grid gap-2 text-base font-medium">
                   {navLinks.map((link) => (

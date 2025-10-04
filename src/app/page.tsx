@@ -2,10 +2,10 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import HeroSection from "@/components/sections/hero";
 import AboutSection from "@/components/sections/about";
-import ServicesSection from "@/components/sections/services";
-import PortfolioSection from "@/components/sections/portfolio";
-import AIToolsSection from "@/components/sections/ai-tools";
-import TestimonialsSection from "@/components/sections/testimonials";
+import FeaturesSection from "@/components/sections/features";
+import DisasterTypesSection from "@/components/sections/disaster-types";
+import AiToolsSection from "@/components/sections/ai-tools";
+import PartnersSection from "@/components/sections/partners";
 import ContactSection from "@/components/sections/contact";
 
 export default function Home() {
@@ -15,10 +15,10 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
-        <ServicesSection />
-        <PortfolioSection />
-        <AIToolsSection />
-        <TestimonialsSection />
+        <FeaturesSection />
+        <DisasterTypesSection />
+        <AiToolsSection />
+        <PartnersSection />
         <ContactSection />
       </main>
       <Footer />

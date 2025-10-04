@@ -9,47 +9,47 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const projects = [
+const disasters = [
   {
-    title: "E-commerce AI Assistant",
-    description: "An AI-powered sales assistant for an e-commerce platform, boosting engagement and conversions.",
-    image: "https://picsum.photos/600/400?random=1",
-    tags: ["Next.js", "AI", "E-commerce"],
-    hint: "online store"
+    title: "Hurricanes & Typhoons",
+    description: "Monitor storm paths, predict landfall intensity, and issue evacuation warnings for coastal regions.",
+    image: "https://picsum.photos/seed/hurricane/600/400",
+    tags: ["Prediction", "Evacuation", "Monitoring"],
+    hint: "hurricane satellite"
   },
   {
-    title: "Corporate Website Redesign",
-    description: "A complete redesign of a corporate website, focusing on modern UI/UX and performance.",
-    image: "https://picsum.photos/600/400?random=2",
-    tags: ["WordPress", "SEO", "UI/UX"],
-    hint: "corporate website"
+    title: "Wildfires",
+    description: "Track fire spread in real-time, predict high-risk zones, and optimize firefighter deployment.",
+    image: "https://picsum.photos/seed/wildfire/600/400",
+    tags: ["Real-time", "Resource Mngmt", "Risk Analysis"],
+    hint: "forest fire"
   },
   {
-    title: "SaaS Platform Development",
-    description: "Built a scalable SaaS platform from the ground up with a focus on user experience and robust architecture.",
-    image: "https://picsum.photos/600/400?random=3",
-    tags: ["Next.js", "Firebase", "Automation"],
-    hint: "dashboard analytics"
+    title: "Floods",
+    description: "Analyze river levels and rainfall data to forecast flood events and map inundation zones.",
+    image: "https://picsum.photos/seed/flood/600/400",
+    tags: ["Forecasting", "GIS Mapping", "Alerts"],
+    hint: "flooded city"
   },
   {
-    title: "Lead Generation Chatbot",
-    description: "Developed a smart chatbot that captures and qualifies leads 24/7 for a real estate agency.",
-    image: "https://picsum.photos/600/400?random=4",
-    tags: ["AI", "Chatbot", "Lead Gen"],
-    hint: "real estate"
+    title: "Earthquakes",
+    description: "Provide instant alerts upon detection and run simulations for potential aftershock impact.",
+    image: "https://picsum.photos/seed/earthquake/600/400",
+    tags: ["Alerts", "Simulation", "Damage Assessment"],
+    hint: "cracked ground"
   },
 ];
 
-export default function PortfolioSection() {
+export default function DisasterTypesSection() {
   return (
-    <section id="portfolio" className="w-full py-16 md:py-24 bg-background">
+    <section id="disasters" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
-            Our Work
+            Disasters We Cover
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground mt-2">
-            Here are some of the projects we are proud of.
+            Our system is adaptable to a wide range of climate and geological threats.
           </p>
         </div>
         <Carousel
@@ -60,26 +60,26 @@ export default function PortfolioSection() {
           className="w-full"
         >
           <CarouselContent>
-            {projects.map((project) => (
-              <CarouselItem key={project.title} className="md:basis-1/2 lg:basis-1/3">
+            {disasters.map((disaster) => (
+              <CarouselItem key={disaster.title} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="h-full overflow-hidden">
                     <CardHeader className="p-0">
                       <div className="relative aspect-video">
                         <Image
-                          src={project.image}
-                          alt={project.title}
+                          src={disaster.image}
+                          alt={disaster.title}
                           fill
                           className="object-cover"
-                          data-ai-hint={project.hint}
+                          data-ai-hint={disaster.hint}
                         />
                       </div>
                     </CardHeader>
                     <CardContent className="p-6">
-                      <CardTitle className="font-headline mb-2">{project.title}</CardTitle>
-                      <p className="text-muted-foreground font-body mb-4 text-sm">{project.description}</p>
+                      <CardTitle className="font-headline mb-2">{disaster.title}</CardTitle>
+                      <p className="text-muted-foreground font-body mb-4 text-sm">{disaster.description}</p>
                        <div className="flex flex-wrap gap-2">
-                        {project.tags.map((tag) => (
+                        {disaster.tags.map((tag) => (
                           <Badge key={tag} variant="secondary">{tag}</Badge>
                         ))}
                       </div>
