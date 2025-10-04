@@ -2,31 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
 import Image from "next/image";
-import Autoplay from "embla-carousel-autoplay";
-
-const heroImages = [
-  {
-    src: "https://picsum.photos/seed/hero-flood/1920/1080",
-    alt: "A flooded city street",
-    hint: "flooded city"
-  },
-  {
-    src: "https://picsum.photos/seed/hero-earthquake/1920/1080",
-    alt: "A street with cracked ground after an earthquake",
-    hint: "cracked ground"
-  },
-  {
-    src: "https://picsum.photos/seed/hero-response/1920/1080",
-    alt: "Emergency response team in action",
-    hint: "emergency response"
-  }
-];
 
 export default function HeroSection() {
   return (
@@ -34,33 +10,14 @@ export default function HeroSection() {
       id="home"
       className="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center"
     >
-      <Carousel
-        className="absolute inset-0 w-full h-full"
-        opts={{
-          loop: true,
-        }}
-        plugins={[
-          Autoplay({
-            delay: 5000,
-            stopOnInteraction: false,
-          }),
-        ]}
-      >
-        <CarouselContent className="h-full">
-          {heroImages.map((image) => (
-            <CarouselItem key={image.src} className="h-full">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover"
-                data-ai-hint={image.hint}
-                priority
-              />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
+      <Image
+        src="https://picsum.photos/seed/disaster-response/1920/1080"
+        alt="Emergency response team coordinating a rescue"
+        fill
+        className="object-cover"
+        data-ai-hint="emergency response team"
+        priority
+      />
       <div className="absolute inset-0 bg-white/30 backdrop-blur-sm" />
       <div className="container mx-auto px-4 md:px-6 text-center space-y-6 relative z-10 text-foreground">
         <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter drop-shadow-lg">
