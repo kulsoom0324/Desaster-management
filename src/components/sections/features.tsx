@@ -5,44 +5,44 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Siren, Bot, Telescope, BarChart, FileWarning, Map } from "lucide-react";
+import { Siren, Bot, Telescope, BarChart, FileWarning, Map, ShieldCheck, Warehouse, Home, Package } from "lucide-react";
 
 const features = [
   {
     icon: <Telescope className="w-8 h-8 text-primary" />,
     title: "Real-time Monitoring",
     description:
-      "Track critical climate data, from satellite imagery to ground sensor networks, all on a unified dashboard.",
+      "Track critical climate data for floods, earthquakes, tsunamis, landslides, and cloudbursts using a unified dashboard.",
   },
   {
     icon: <Bot className="w-8 h-8 text-primary" />,
     title: "AI-Powered Predictions",
     description:
-      "Utilize advanced machine learning models to forecast disaster paths, intensity, and potential impact with high accuracy.",
+      "Utilize advanced machine learning to forecast disaster paths, intensity, and potential impact with high accuracy.",
   },
   {
     icon: <Siren className="w-8 h-8 text-primary" />,
     title: "Early Warning System",
     description:
-      "Deliver timely and targeted alerts to affected populations through multiple channels, ensuring preparedness.",
+      "Deliver timely, targeted alerts to affected populations through multiple channels, ensuring maximum preparedness.",
   },
    {
-    icon: <BarChart className="w-8 h-8 text-primary" />,
-    title: "Resource Management",
+    icon: <Warehouse className="w-8 h-8 text-primary" />,
+    title: "Aid & Inventory Management",
     description:
-      "Optimize the allocation of emergency resources, personnel, and aid with our intelligent logistics and planning tools.",
+      "Optimize the allocation of emergency resources, safety kits, and aid with our intelligent logistics and planning tools.",
   },
   {
-    icon: <Map className="w-8 h-8 text-primary" />,
-    title: "Interactive GIS Mapping",
+    icon: <Home className="w-8 h-8 text-primary" />,
+    title: "Shelter Identification",
     description:
-      "Visualize disaster data, vulnerable zones, and resource locations on dynamic, high-resolution maps.",
+      "Instantly locate and map the nearest available emergency shelters, complete with capacity and resource information.",
   },
   {
-    icon: <FileWarning className="w-8 h-8 text-primary" />,
-    title: "Automated Reporting",
+    icon: <Package className="w-8 h-8 text-primary" />,
+    title: "Emergency Backpack Guide",
     description:
-      "Generate comprehensive damage assessments and post-disaster reports automatically to speed up recovery efforts.",
+      "Receive AI-driven guidance on essential items for your emergency backpack, tailored to specific disaster scenarios.",
   },
 ];
 

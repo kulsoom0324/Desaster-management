@@ -11,32 +11,39 @@ import { Badge } from "@/components/ui/badge";
 
 const disasters = [
   {
-    title: "Hurricanes & Typhoons",
-    description: "Monitor storm paths, predict landfall intensity, and issue evacuation warnings for coastal regions.",
-    image: "https://picsum.photos/seed/hurricane/600/400",
-    tags: ["Prediction", "Evacuation", "Monitoring"],
-    hint: "hurricane satellite"
-  },
-  {
-    title: "Wildfires",
-    description: "Track fire spread in real-time, predict high-risk zones, and optimize firefighter deployment.",
-    image: "https://picsum.photos/seed/wildfire/600/400",
-    tags: ["Real-time", "Resource Mngmt", "Risk Analysis"],
-    hint: "forest fire"
-  },
-  {
     title: "Floods",
     description: "Analyze river levels and rainfall data to forecast flood events and map inundation zones.",
-    image: "https://picsum.photos/seed/flood/600/400",
+    image: "https://picsum.photos/seed/flood-city/600/400",
     tags: ["Forecasting", "GIS Mapping", "Alerts"],
     hint: "flooded city"
   },
   {
     title: "Earthquakes",
-    description: "Provide instant alerts upon detection and run simulations for potential aftershock impact.",
-    image: "https://picsum.photos/seed/earthquake/600/400",
+    description: "Provide instant alerts upon seismic detection and run simulations for potential aftershock impact.",
+    image: "https://picsum.photos/seed/earthquake-crack/600/400",
     tags: ["Alerts", "Simulation", "Damage Assessment"],
     hint: "cracked ground"
+  },
+  {
+    title: "Tsunamis",
+    description: "Monitor undersea seismic activity to issue timely coastal evacuation warnings and model wave propagation.",
+    image: "https://picsum.photos/seed/tsunami-wave/600/400",
+    tags: ["Evacuation", "Prediction", "Coastal Safety"],
+    hint: "large wave"
+  },
+  {
+    title: "Landslides",
+    description: "Analyze soil stability and weather patterns to identify high-risk slopes and protect communities.",
+    image: "https://picsum.photos/seed/landslide/600/400",
+    tags: ["Risk Analysis", "Monitoring", "Prevention"],
+    hint: "muddy hillside"
+  },
+  {
+    title: "Cloudbursts",
+    description: "Track intense, localized rainfall to warn of flash floods and manage urban drainage systems.",
+    image: "https://picsum.photos/seed/cloudburst/600/400",
+    tags: ["Flash Flood", "Urban Safety", "Real-time"],
+    hint: "heavy rain"
   },
 ];
 
