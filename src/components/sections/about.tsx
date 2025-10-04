@@ -10,11 +10,11 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl order-last md:order-first">
             <Image
-              src="https://picsum.photos/seed/disaster-map/800/600"
-              alt="Global Disaster Monitoring Dashboard"
+              src="https://picsum.photos/seed/disaster-aftermath/800/600"
+              alt="Aftermath of a disaster"
               fill
               className="object-cover"
-              data-ai-hint="disaster map"
+              data-ai-hint="disaster aftermath"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
