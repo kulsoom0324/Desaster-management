@@ -11,11 +11,11 @@ export default function HeroSection() {
       className="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center"
     >
       <Image
-        src="https://picsum.photos/seed/disaster-response/1920/1080"
-        alt="Emergency response team coordinating a rescue"
+        src="https://picsum.photos/seed/disaster-scene/1920/1080"
+        alt="A city street after a disaster"
         fill
         className="object-cover"
-        data-ai-hint="emergency response team"
+        data-ai-hint="disaster aftermath"
         priority
       />
       <div className="absolute inset-0 bg-white/30 backdrop-blur-sm" />
